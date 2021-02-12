@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1>Mission to Mars</h1>
+    <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+  </div>
+  <div class="container">
+    <h3>Latest Mars News</h3>
+    <h4>{{ mars.news_title}}</h4>
+    <p>{{ mars.news_p }}</p>
+  </div>
+
+  <div class='container'>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3>Featured Mars Image</h3>
+        <img src="{{mars.featured_image_url}}" width=500 alt="Featured Image">
+      </div>
+
+      <!-- Table -->
+
+      <div .col-lg-6 col-md-6 col-sm-12>
+        <h3>Mars Facts</h3>
+        <table class="table table-striped table-responsive-md">
+          <thead class="table-light" style="text-align: left;">
+            <tr style="text-align: left;">
+              {{mars.html_table|safe}}
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="mars-hemispheres">
+    <div class="col-md-12">
+      <h3>
+        <center>Mars Hemispheres</center>
+      </h3>
+
+      {% for hemisphere in mars.hem_image %}
+      <div class="col-md-6">
+        <div >
+          <img src="{{mars.img_url}}">
+          <h3>{{hemisphere.title}}</h3>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+
+  </div>
+
+
+  <!-- <div class="container-fluid">
+      <div class="row">
+
+        <div .col-lg-3 col-md-3 col-sm-3>
+          <div class="card" style="width: 40rem;">
+              <div class="card-body">
+                <h4 class="card-title">{{ mars.title}}</h4>
+                <img src="{{mars.img_url}}" alt="Cerberus Hemisphere Enhanced">
+              </div>
+          </div>
+        </div>
+        <div .col-lg-3 col-md-3 col-sm-3>
+          <div class="card" style="width: 40rem;">
+            <div class="card-body">
+              <h4 class="card-title">{{ mars.title}}</h4>
+              <img src="{{mars.img_url}}" alt="Schiaparelli Hemisphere Enhanced">
+            </div>
+          </div>
+        </div>
+        <div .col-lg-3 col-md-3 col-sm-3>
+          <div class="card" style="width: 40rem;">
+              <div class="card-body">
+                <h4 class="card-title">{{ mars.title}}</h4>
+                <img src="{{mars.img_url}}" alt="Syrtis Major Hemisphere Enhanced">
+              </div>
+          </div>
+        </div>
+        <div .col-lg-3 col-md-3 col-sm-3>
+          <div class="card" style="width: 40rem;">
+            <div class="card-body">
+              <h4 class="card-title">{{ mars.title}}</h4>
+              <img src="{{mars.img_url}}" alt="Valles Marineris Hemisphere Enhanced">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div> -->
+
+  <!-- <h3 style="padding-top: 50px; margin-top: 100px; text-align: center;">Mars Hemispheres</h3> -->
+  <!-- <div class="card-deck">
+        <hr>
+        <div class="col-md-12">
+            <div class="row">
+                {% for x in hem_image %}
+                <div class="col-md-6">
+                    <div class="card bg-dark" style="margin: 30px;">
+                        <img class="card-img-top" src="{{ x.img_url }}" >
+                        <div class="card-body">
+                            <p class="card-text">{{ mars.title }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>  -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
