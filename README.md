@@ -35,5 +35,5 @@ Built a web application that scrapes various websites for data related to the Mi
 
 2. Screenshots of your final application.
    ![image header](Mission_to_Mars/assests/image_header_table.png)
-   ![mars facts](Mission_to_Mars/assests/mars_facts_table.png)
+   ![mars facts](Mission_to_Mars/assests/mars_facts_table.png) ![all hemispheres](Mission_to_Mars/assests/mars_hemisphere_all.png)
    ![mars mission](Mission_to_Mars/assests/all_mars_mission.png)
