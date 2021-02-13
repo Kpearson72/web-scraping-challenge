@@ -24,6 +24,8 @@ Built a web application that scrapes various websites for data related to the Mi
 
 * Visit the USGS Astrogeology site [here](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) to obtain high resolution images for each of Mar's hemispheres.
 
+### Data loaded to Mongo
+![Mongo Image](Mission_to_Mars/assests/scraped%20data%20in%20mongo.png)
 
 ## Step 2 - MongoDB and Flask Application
 
