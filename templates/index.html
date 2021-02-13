@@ -12,21 +12,30 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/style.css">
+  <style type="text/css">
+    .jumbotron {
+        margin-top:20px;
+        background-position: center;
+        background-image: url("https://images8.alphacoders.com/374/374852.jpg");
+        background-size: cover;
+        color: white
+    }
+  </style>
 </head>
 
 <body>
+
+
   <!-- Jumbotron -->
   <div class='container'></div>
     <div class="jumbotron text-center">
-      <h1 class="display-1">Mission to Mars</h1>
-      <p><a class="btn btn-secondary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+        <h1 class="display-1">Mission to Mars</h1>
+          <p><a class="btn btn-dark btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+        </div>
     </div>
-    <div>
 
-
-    </div>
     <div class="container">
-      <h2>Latest Mars News</h2>
+      <h1>Latest Mars News</h1>
       <hr>
       <h4>{{ mars.news_title}}</h4>
       <p class=paragraph>{{ mars.news_p }}</p>
@@ -36,7 +45,7 @@
   <div class='container'>
     <div class="row">
       <div class="col-lg-5 col-md-5 col-sm-5">
-        <h3 class='display-6'>Featured Mars Image</h3>
+        <h2>Featured Mars Image</h2>
         <img src="{{mars.featured_image_url}}" width=600 alt="Featured Image">
       </div>
       <div class="col-md-2"></div>
@@ -45,7 +54,7 @@
         <h3 class="text-center">Mars Facts</h3>
         <table class=" table-responsive-md">
           <thead class="table-light" style="text-align: left;">
-            <tr style="border-color: black;">
+            <tr>
                   {{mars.html_table|safe}}
             </tr>
           </thead>
