@@ -125,7 +125,7 @@ def scrape_all():
 
 
     html_table = html_table.replace('right', 'left')
-    html_table = html_table.replace('dataframe', 'table table-striped')
+    html_table = html_table.replace('dataframe', 'table table-striped table-bordered')
     html_table
 
 
