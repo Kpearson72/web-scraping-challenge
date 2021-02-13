@@ -1,7 +1,4 @@
 # **Web Scraping Homework**
-
----------------------------------------------------------------------
-
 ## Mission to Mars
 
 ![mission_to_mars](Mission_to_Mars/assests/mars-short-read-overlay1.jpg)
@@ -30,14 +27,13 @@ Built a web application that scrapes various websites for data related to the Mi
 
 ## Step 2 - MongoDB and Flask Application
 
-* Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+* Use MongoDB with Flask templating to create a new [HTML](https://github.com/Kpearson72/web-scraping-challenge/blob/main/templates/index.html) page that displays all of the information that was scraped from the URLs above.
 
 ## Step 3 - Submission
 
 1. The [Jupyter Notebook](https://github.com/Kpearson72/web-scraping-challenge/blob/main/mission_to_mars.ipynb) containing the scraping code used.
 
 2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot.
-
-4. Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
+   ![image header](Mission_to_Mars/assests/image_header_table.png)
+   ![mars facts](Mission_to_Mars/assests/mars_facts_table.png)
+   ![mars mission](Mission_to_Mars/assests/all_mars_mission.png)
