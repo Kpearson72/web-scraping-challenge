@@ -35,5 +35,5 @@ Built a web application that scrapes various websites for data related to the Mi
 
 2. Screenshots of your final application.
    ![image header](Mission_to_Mars/assests/Screen%20Shot%202021-02-13%20at%203.47.10%20PM.png)
-   ![mars facts](Mission_to_Mars/assests/mars_facts_table.png) ![all hemispheres](Mission_to_Mars/assests/mars_hemisphere_4.png)
+
    ![mars mission](Mission_to_Mars/assests/all_mars_mission.png)
