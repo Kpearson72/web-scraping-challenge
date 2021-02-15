@@ -10,12 +10,11 @@
     color: white;
 
 }
-#size_featured_image {
-    size: 500px;
-}
+/* #size_featured_image {
+    max-width: 480px;
+} */
 #mars_facts_table {
-    margin-left: 15px;
-    padding-left: 15px;
+
     font-family:Arial, Helvetica, sans-serif ;
 }
 
