@@ -29,7 +29,7 @@
   <!-- Jumbotron -->
   <div class='container'></div>
     <div class="jumbotron text-center">
-        <h1 class="display-1">Mission to Mars</h1>
+        <h1 class="heading_Mission_to_Mars">Mission to Mars</h1>
           <p><a class="btn btn-dark btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
         </div>
     </div>
@@ -37,24 +37,24 @@
     <div class="container">
       <h1>Latest Mars News</h1>
       <hr>
-      <h4>{{ mars.news_title}}</h4>
-      <p class=paragraph>{{ mars.news_p }}</p>
+      <h4 id="mars_news">{{ mars.news_title}}</h4>
+      <p>{{ mars.news_p }}</p>
       <hr>
     </div>
   </div>
   <div class='container'>
     <div class="row">
-      <div class="col-lg-5 col-md-5 col-sm-5">
+      <div class="col-lg-4 col-md-4 col-sm-4 ">
         <h2>Featured Mars Image</h2>
-        <img src="{{mars.featured_image_url}}" width=600 alt="Featured Image">
+        <img id= "size_featured_image" src="{{mars.featured_image_url}}"  alt="Featured Image">
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-md-3"></div>
       <!-- Table -->
       <div class = "col-lg-5 col-md-5 col-sm-5" >
-        <h3 class="text-center">Mars Facts</h3>
-        <table class=" table-responsive-md">
-          <thead class="table-light" style="text-align: left;">
-            <tr>
+        <h3>Mars Facts</h3>
+        <table>
+          <thead>
+            <tr id = "mars_facts_table">
                   {{mars.html_table|safe}}
             </tr>
           </thead>

@@ -36,6 +36,12 @@ Built a web application that scrapes various websites for data related to the Mi
 1. The [Jupyter Notebook](https://github.com/Kpearson72/web-scraping-challenge/blob/main/mission_to_mars.ipynb) containing the scraping code used.
 
 2. Screenshots of your final application.
-   ![image header](Mission_to_Mars/assests/Screen%20Shot%202021-02-13%20at%203.47.10%20PM.png)
+   
+   top image upclose
+   ![image header](Mission_to_Mars/assests/top_image.png)
+   
+   bottom image upclose
+   ![mars mission](Mission_to_Mars/assests/bottom_image.png)
 
-   ![mars mission](Mission_to_Mars/assests/all_mars_mission.png)
+   Full image png
+   ![full image](Mission_to_Mars/assests/full_image.png)
