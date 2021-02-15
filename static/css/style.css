@@ -11,7 +11,7 @@
 
 }
 #size_featured_image {
-    size: 1000px;
+    size: 500px;
     margin-right: 15px;
     padding-left: 15px;
 }
@@ -26,5 +26,9 @@ p {
 }
 
 #mars_news {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mars_hemisphere {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
