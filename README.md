@@ -37,11 +37,11 @@ Built a web application that scrapes various websites for data related to the Mi
 
 2. Screenshots of your final application.
    
-   top image upclose
+   ***top image upclose***
    ![image header](Mission_to_Mars/assests/top_image.png)
    
-   bottom image upclose
+   ***bottom image upclose***
    ![mars mission](Mission_to_Mars/assests/bottom_image.png)
 
-   Full image png
+   ***Full image png***
    ![full image](Mission_to_Mars/assests/full_image.png)
